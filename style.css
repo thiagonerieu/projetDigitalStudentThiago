@@ -1,0 +1,248 @@
+/* Code permettant de supprimer la marge par défaut des navigateurs. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+  --couleur-principale: #7F77DD;
+  --couleur-texte: #333;
+  --espacement: 16px;
+}
+
+.bouton {
+  background: var(--couleur-principale);
+  padding: var(--espacement);
+} */
+
+/* Code définissant les polices du site conformément à la charte graphique du projet. */
+h1 {
+    font-family: 'Montserrat';
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #333333;
+    padding-left: 5vw;
+}
+
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Nunito Sans';
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #333333
+}
+
+p, ul, li, a, .contact {
+    font-family: 'Open Sans';
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #333333;
+    padding: 5px 0px;
+}
+
+/* Codes permettant de définir le style du site. */
+header, footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #E0E0E0;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Codes pour la section bannière. */
+#section-banner {
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F0F0;
+    padding: 20px;
+}
+
+.titre-principal, .titre-secondaire, .logosHTMLCSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.titre-principal {
+    font-size: 1rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoHTML, .logoCSS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 25vw;
+    max-height: fit-content;
+}
+
+/* Codes pour la section pourquoi. */
+.pourquoi, .pourquoi ol {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pourquoi {
+    background-color: #333333;
+    padding: 50px;
+    padding-left: 4vw;
+    gap: 10px;
+}
+
+#pourquoi h3, #pourquoi p, .pourquoi li {
+    color: #F0F0F0;
+}
+
+#pourquoi h2, #balises h2 {
+    color: #FACC15;
+}
+
+.pourquoi li {
+    color: #FACC15;
+    padding-left: 2vh;
+}
+
+/* Codes pour la section balises. */
+#balises, #styles {
+    background-color: #F0F0F0;
+    padding: 50px;
+    padding-left: 4vw;
+    gap: 10px;
+}
+
+#balises h3, #balises p, #styles h3, #styles p {
+    color: #333333;
+}
+
+#balises h2, #styles h2 {
+    color: #3B82F6;
+}
+
+.balises, .styles {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.balises li , .styles li {
+    color: #3B82F6;
+    padding-left: 2vh;
+}
+
+.codeHTML {
+    display:flex;
+    flex-direction: column;
+}
+
+/* Codes pour la section tips et bonnes pratiques. */
+
+/* Codes pour la section contact. */
+#contact {
+    background-color: #FACC15;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.contact {
+    padding: 4vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E0E0E0;
+}
+
+legend h3 {
+    font-size: 2rem;
+}
+
+#buttonEnvoyer, #buttonReset {
+    background: radial-gradient( circle farthest-corner at 10% 20%, #3B82F6 0%, #333333 100.3% );
+    transition: all 0.3s ease;
+    max-width: 50vh;
+    padding: 2vh 4vw;
+    border-radius: 10em;
+    border: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em;
+    color:#F0F0F0;
+}
+
+#buttonEnvoyer:hover, #buttonReset:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* C'est cette partie qui assure la réactivité du site. Mais, je n'ai pas eu le temps de m'occuper de la réactivité du site. */
+
+
+@media screen and (max-width: 768px) {
+ body {
+ font-size: 1.8rem;
+ }
+ .container {
+ width: 90%;
+ margin: 0 auto;
+ }
+}
+
+/* @media (max-width: 768px) {
+    .logoDigitalStudent { 
+    width: 100vw; 
+    }
+}
+
+@media (max-width: 576px) {
+    .logoDigitalStudent { 
+    width: 120vw; 
+    }
+}
+
+@media (min-width: 390px) and (max-width: 480px) {
+    .logoDigitalStudent { 
+    width: 160vw; 
+    }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+    .logoDigitalStudent { 
+    width: 110vw; 
+    }
+}
+
+@media (min-width: 769px) {
+    .logoDigitalStudent { 
+    max-width: fit-content;
+    max-height: fit-content; 
+    }
+} */

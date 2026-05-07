@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Student</title>
+</head>
+
+<body>
+    <header>
+        <img class="logoDigitalStudent" src="./images/logoDigitalStudent.png" alt="Logo Digital Student">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#pourquoi">Pourquoi HTML/CSS?</a></li>
+                <li><a href="#balises">Les balises de base</a></li>
+                <li><a href="#tips">Tips & bonnes pratiques</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section id="section-banner">
+            <div class="titre-principal">
+                <h1>Votre guide complet pour débuter avec le <strong>HTML/CSS</strong>.</h1>
+            </div>
+            <div class="logosHTMLCSS">
+                <img class="logoHTML" src="./images/logoHTML.png" alt="Logo HTML">
+                <img class="logoCSS" src="./images/logoCSS.png" alt="Logo CSS">
+            </div>
+            <!-- <div class="titre-secondaire">
+                <h2>Tout ce dont vous avez besoin, du niveau débutant au niveau avancé.</h2>
+            </div> -->
+        </section>
+        <section id="pourquoi">
+            <div class="pourquoi">
+                <h2>Pourquoi apprendre HTML/CSS?</h2>   
+                <h3>HTML et CSS sont les fondations du web.</h3>
+                <p>Maîtriser HTML/CSS ouvre la porte à des métiers comme :</p>
+                <ol class="pourquoi">
+                    <li>Développeur front-end</li>
+                    <li>Intégrateur web</li>
+                    <li>Designer UI/UX</li>
+                    <li>Développeur full-stack (comme première étape)</li>
+                </ol>
+                <h3>Même si tu ne veux pas devenir développeur, connaître HTML/CSS te permet de :</h3>
+                <ol class="pourquoi">
+                    <li>Créer ton propre portfolio ou blog</li>
+                    <li>Modifier un site WordPress ou Shopify</li>
+                    <li>Comprendre comment fonctionne le web</li>
+                </ol>
+                <p>HTML/CSS sont incontournables avant d'apprendre <em>JavaScript, React, Vue.js,</em> etc.<br/>Impossible d'aller plus loin sans ces bases.</p>
+                <h3>Rapide à apprendre</h3>
+                <p>Les bases de HTML/CSS s'acquièrent en <em>quelques semaines avec une pratique régulière</em>.<br/>C'est l'un des meilleurs retours sur investissement en apprentissage tech.</p>
+            </div>
+        </section>
+        <section id="balises">
+            <div class="grid-code">
+                <div class="row-code">
+                    <div class="column-code">
+                        <h2>Balises HTML</h2>
+                        <p>Les balises HTML sont utilisées pour structurer et formater le contenu d'une page web.<br/>Par exemple :</p>
+                        <ul class="balises">
+                            <li><strong>&lt;h1&gt;</strong> - Titre principal</li>
+                            <li><strong>&lt;p&gt;</strong> - Paragraphe de texte</li>
+                            <li><strong>&lt;ul&gt;</strong> - Liste non ordonnée</li>
+                            <li><strong>&lt;li&gt;</strong> - Élément de liste</li>
+                            <li><strong>&lt;a&gt;</strong> - Lien hypertexte</li>
+                            <li><strong>&lt;img&gt;</strong> - Image</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="codeHTML">
+                    <pre><code>
+<strong>Indique au navigateur que le document est en HTML5. Toujours en première ligne.</strong>
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </div>
+                <div class="codeHTML">
+                    <pre><code>
+<strong>Contient les métadonnées invisibles : titre de l'onglet, encodage, lien vers le CSS…</strong>
+                            
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Mon site&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+                    </code></pre>
+                </div>                    
+                <div class="codeHTML">
+                    <pre><code>
+<strong>Contient les métadonnées invisibles : titre de l'onglet, encodage, lien vers le CSS…</strong>
+                        
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Mon site&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+                    </code></pre>
+                </div>
+        </section>  
+        <section id="styles">      
+                <div>
+                    <h2>Styles CSS</h2>
+                    <p>Les styles CSS permettent de modifier l'apparence des éléments HTML.<br/>Voici quelques propriétés courantes:</p>
+                    <ul class="styles">
+                        <li><strong>color</strong> - Couleur du texte</li>
+                        <li><strong>background-color</strong> - Couleur de fond</li>
+                        <li><strong>font-size</strong> - Taille de la police</li>
+                        <li><strong>margin</strong> - Marge extérieure</li>
+                        <li><strong>padding</strong> - Remplissage intérieur</li>
+                        <li><strong>border</strong> - Bordure</li>
+                    </ul>
+                </div>
+                <div class="styleCSS">
+                    <pre><code>
+&lt;<strong>Contient les métadonnées invisibles : titre de l'onglet, encodage, lien vers le CSS…</strong>
+                        
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Mon site&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+                    </code></pre>
+                </div>               
+            </div>
+        </section>
+        <section id="tips">
+<!-- Je n'ai pas eu le temps de le faire, mais j'ai noté une partie du contenu dans le fichier readme.md. -->
+        </section>
+        <section id="contact">
+            <form method="post" action="contact.php">
+        <fieldset class="contact">
+            <legend><h3>Contact</h3></legend>
+            <label>Prénom: </label>
+            <input name="prenom" id="prenom" placeholder="Ex: Thiago" type="text" minlength="2" maxlength="20"><br>
+            <label for="nom">Nom: </label>
+            <input  name="nom" id="nom" type="text" minlength="2" maxlength="20" placeholder="Ex: Neri"><br>
+            <label for="email">E-mail: </label>
+            <input  name="email" id="email" type="email" placeholder="Ex: monmail@monmail.com"><br>
+            <label for="tel">Numéro: </label>
+            <input  name="tel" id="tel" type="tel" placeholder="Ex: 00.11.22.33.44"><br>
+            <label for="motDePasse">Mot de passe: </label>
+            <input  name="password" id="password" type="password" minlength="8" maxlength="30" placeholder="Ex: m0tD&PAss3"><br>
+            <label for="age">Age: </label>
+            <input  name="age" id="age" type="number" placeholder="Ex: 43"><br>
+            <label for="commentaire">Laissez-nous un message: </label><br>
+            <textarea  name="commentaire" id="commentaire" type="text" rows="10" cols="70" placeholder="J'ai adoré cette initiative et j'aimerais approfondir mes connaissances en programmation. !"></textarea><br>
+            <label for="date">Date de mon commentaire: </label>
+            <input  name="date" id="date" type="date"><br>
+            <label for="photo">Ajouter un document: </label><input id="buttonFichier" type="file" accept=".pdf, .png, .jpg, .webp">Choisir un fichier</input> Aucun fichier choisi.<br>
+        </fieldset>
+        <fieldset class="contact langages">
+            <legend for="checkbox"><strong>Vous préferez:</strong></legend>
+            <input type="checkbox" id="html" name="html" checked><label>Le HTML</label><br>
+            <input type="checkbox" id="css" name="css"><label>Le CSS</label><br>
+            <input type="checkbox" id="bootstrap" name="bootstrap"><label>Le Bootstrap</label><br>
+            <input type="checkbox" id="sass" name="sass"><label>Le SASS</label><br>
+            <input type="checkbox" id="toutesLesReponses" name="toutesLeReponses"><label>Toutes les réponses ci-dessus.</label>
+        </fieldset>
+        <fieldset class="contact etudes">
+            <legend for="radio"><strong>À quel moment préférez-vous étudier ?</strong></legend>
+            <input type="radio" id="matin" name="radio" checked><label>Le matin</label><br>
+            <input type="radio" id="midi" name="radio"><label>Le midi</label><br>
+            <input type="radio" id="soir" name="radio"><label>Le soir</label><br>
+            <input type="radio" id="week-end" name="radio"><label>Le week-end</label>
+        </fieldset>
+        <fieldset class="contact fin">
+            <legend for="aPropos"><strong>À propos de vous</strong></legend>
+            <label for="votreMoment">Comment vous sentez-vous maintenant ?</label>
+            <select>
+                <optgroup label="Team Bon Courage">
+                    <option value="J'en veux plus">Je me sens en confiance !</option>
+                    <option value="C'est super !">Je pense que je vais y arriver.</option>
+                </optgroup>
+                <optgroup label="Team Désespoir Total">
+                    <option value="J'en ai marre" selected>Je ne sais pas trop.</option>
+                    <option value="Pitié !">Ça ne va pas très bien de mon côté !</option>
+                </optgroup>
+            </select>
+            <button id="buttonEnvoyer" type="submit">Envoyer</button><button id="buttonReset" type="reset">Reset</button>
+        </fieldset>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="logoDigitalStudent" src="./images/logoDigitalStudent.png" alt="Logo Digital Student">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#pourquoi">Pourquoi HTML/CSS?</a></li>
+                <li><a href="#balises">Les balises de base</a></li>
+                <li><a href="#tips">Tips & bonnes pratiques</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p> 2026 Digital Student. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
