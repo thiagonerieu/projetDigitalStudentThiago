@@ -33,7 +33,7 @@ Les bases de HTML/CSS s'acquièrent en quelques semaines avec une pratique régu
 Balises HTML
 Les balises HTML sont utilisées pour structurer et formater le contenu d'une page web. Par exemple :
 
-<h1>
+<pre><code><h1>
 - Titre principal
 <p>
 - Paragraphe de texte
@@ -47,7 +47,7 @@ Les balises HTML sont utilisées pour structurer et formater le contenu d'une pa
 - Image
 Styles CSS
 Les styles CSS permettent de modifier l'apparence des éléments HTML. Voici quelques propriétés courantes:
-
+</pre></code>
 color
 - Couleur du texte
 background-color
